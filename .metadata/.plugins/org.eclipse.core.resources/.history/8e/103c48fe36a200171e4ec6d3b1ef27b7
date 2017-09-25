@@ -42,24 +42,17 @@ public class PlayerTest {
 		assertTrue("player h model is X", h.toString()=="X");
 	}
 	
-	@Test
-	public void testUpScore() {
-		Player i = new Player(1,2);
-		Player j = new Player(3,4);
-		i.upScore();
-		i.upScore();
-		j.upScore();
-		j.upScore();
-		j.upScore();
-		assertTrue("player i has a score of 2", i.getScore()==2);
-		assertTrue("player j has a score of 3", j.getScore()==3);
-	}
-	
-	@Test
-	public void testYSetter() {
-		Player i = new Player(1,2);
-		i.setYcoord(5);
-		assertTrue("Player has y coordinate of 5", i.getY()==5);
-	}
+//	@Test
+//	public void testUpScore {
+//		Player i = new Player(1,2);
+//		Player j = new Player(3,4);
+//		i.upScore;
+//		i.upScore;
+//		j.upScore;
+//		j.upScore;
+//		j.upScore;
+//		assertTrue("player i has a score of 2", i.getScore()==2);
+//		assertTrue("player j has a score of 3", j.getScore()==3);
+//	}
 
 }
