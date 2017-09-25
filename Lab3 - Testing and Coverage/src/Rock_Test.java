@@ -1,0 +1,52 @@
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+
+import org.junit.Test;
+
+public class Rock_Test {
+
+	@Test
+	public void test_Constructor() {
+		//test xCoord
+		Integer[] arr1  = new Integer[1000];
+		for (int i=0; i<1000; i++){
+			Rock r1 = new Rock(25,50);
+			arr1[i] = r1.getX();
+		}
+		
+		int min = Collections.min(Arrays.asList(arr1));
+		int max = Collections.max(Arrays.asList(arr1));
+		
+		assertEquals("xCoord min", 0, min);
+		assertEquals("xCoord max",24,max);
+				
+		Rock r1 = new Rock(25,50);
+		assertEquals("Test Rock yCoord", r1.getY(), 0);
+		assertNotEquals("Test Rock yCoord", r1.getY(), 25);
+	}
+		
+	@Test
+	public void test_moveRock(){
+//		Rock r1 = new Rock(25,50);
+//		assertEquals("test original y coordinate", 0,r1.getY());
+//		r1.moveRock();
+//		assertEquals("test rock moved",1,r1.getY());
+	}
+	
+	@Test
+	public void test_toString(){
+		Rock r1 = new Rock(25,50);
+		assertEquals("test toString()", "O", r1.toString());
+	}
+	
+	@Test
+	public void test_setxCoord(){
+		Rock r1 = new Rock(25,50);
+		r1.setxCoord(50);
+		assertEquals("Pass xCoord Setter", 50, r1.getX());
+	}
+
+}
