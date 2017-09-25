@@ -63,12 +63,5 @@ public class PlayerTest {
 		assertTrue("player i has a score of 2", i.getScore()==2);
 		assertTrue("player j has a score of 3", j.getScore()==3);
 	}
-	
-	@Test
-	public void testYCoord(){
-		Player g = new Player(1,1);
-		g.setYcoord(5);
-		assertTrue("Player's y location is 5", g.getY()==5);
-	}
 
 }
