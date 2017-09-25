@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rock_Test" project="Lab3 - Testing and Coverage" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="Rock_Test" time="0.03">
+    <testcase name="test_moveRock" classname="Rock_Test" time="0.013"/>
+    <testcase name="test_Constructor" classname="Rock_Test" time="0.015"/>
+    <testcase name="test_toString" classname="Rock_Test" time="0.002"/>
+  </testsuite>
+</testrun>

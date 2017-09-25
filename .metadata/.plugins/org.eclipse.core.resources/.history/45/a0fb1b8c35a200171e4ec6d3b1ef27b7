@@ -22,7 +22,7 @@ public class Rock {
 		return this.yCoord;
 	}
 	
-	void setxCoord(int xCoord) {
+	private void setxCoord(int xCoord) {
 		this.xCoord = xCoord;
 	}
 

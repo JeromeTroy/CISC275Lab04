@@ -1,6 +1,5 @@
 import static org.junit.Assert.*;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Collection;
@@ -45,9 +44,8 @@ public class Rock_Test {
 	}
 	
 	@Test
-	public void test_setxCoord(){
+	public void test_setxCoord() throws NoSuchMethodException, SecurityException{
 		Rock r = new Rock(25,40);
-		r.setxCoord(5);
-		assertEquals("rock has x coord 5", r.getX()==5);
+		Method xSetter = Rock.class.getDeclaredMethod("setxCoord",null);
 	}
 }

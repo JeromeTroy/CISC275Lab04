@@ -45,9 +45,11 @@ public class Rock_Test {
 	}
 	
 	@Test
-	public void test_setxCoord(){
+	public void test_setxCoord() throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
 		Rock r = new Rock(25,40);
-		r.setxCoord(5);
-		assertEquals("rock has x coord 5", r.getX()==5);
+		Method xSetter = Rock.class.getDeclaredMethod("setxCoord",null);
+		xSetter.setAccessible(true);
+		xSetter.invoke(r, 5);
+		
 	}
 }

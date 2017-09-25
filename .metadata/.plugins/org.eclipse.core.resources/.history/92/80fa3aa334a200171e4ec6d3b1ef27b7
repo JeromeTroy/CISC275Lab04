@@ -1,7 +1,5 @@
 import static org.junit.Assert.*;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -44,10 +42,5 @@ public class Rock_Test {
 		assertEquals("test toString()", "O", r1.toString());
 	}
 	
-	@Test
-	public void test_setxCoord(){
-		Rock r = new Rock(25,40);
-		r.setxCoord(5);
-		assertEquals("rock has x coord 5", r.getX()==5);
-	}
+
 }
