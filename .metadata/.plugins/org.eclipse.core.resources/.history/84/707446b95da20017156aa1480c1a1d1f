@@ -8,7 +8,7 @@ class Board{
 	boolean lost;
 	public Player player;
 	public int timer;
-	ArrayList<Rock> Rocks;
+	private ArrayList<Rock> Rocks;
 	private final int width = 20;
 	private final int height = 20;
 	private static StringBuilder[] screen;
@@ -33,7 +33,7 @@ class Board{
 		screen[height - 1].replace((width/2), (width/2) + 1, player.toString());
 	}
 	
-	void spawnRock(){
+	private void spawnRock(){
 		Rock rock = new Rock(width, height);
 		Rocks.add(rock);
 		screen[0].replace(rock.getX(), rock.getX() + 1, rock.toString());
@@ -41,7 +41,7 @@ class Board{
 	public void setTimer(int timer){
 		this.timer = timer;
 	}
-	void moveRocks(){
+	private void moveRocks(){
 		for(int r = 0; r < (Rocks.size() - 1); r++){
 			Rocks.get(r).moveRock();
 			if(Rocks.get(r).getY() == height){
@@ -65,7 +65,7 @@ class Board{
 		}
 	}
 	
-	void removeRock(int i){
+	private void removeRock(int i){
 		Rocks.remove(i);
 	}
 	

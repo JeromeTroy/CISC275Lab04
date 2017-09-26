@@ -1,10 +1,9 @@
 /Board.class
 /BoardTest.class
 /Player.class
-/jline/
 /PlayerTest.class
 /Rock.class
+/Rock_Test.class
 /WaitForCharThread.class
 /gameWrapper.class
-/gameWrapperTest.class
-/Rock_Test.class
+/jline/

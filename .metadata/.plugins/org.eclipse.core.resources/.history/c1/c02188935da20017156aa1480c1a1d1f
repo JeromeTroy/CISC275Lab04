@@ -1,0 +1,55 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import java.util.*;
+
+public class BoardTest {
+
+	@Test
+	public void testConstructor() {
+		Board b = new Board(3);
+		Board c = new Board(1);
+		assertTrue("Difficulty is 3", b.difficulty==3);
+		assertTrue("Timer is 150", b.timer==150);
+		assertTrue("Difficulty is 3", c.difficulty==1);
+		assertTrue("Timer is 150", c.timer==150);
+		
+		
+	}
+	
+	@Test
+	public void testRockSpawn(){
+		Board b = new Board(3);
+		//b.spawnRock();
+	}
+	
+	@Test 
+	public void testTimer(){
+		Board b = new Board(3);
+		b.setTimer(740);
+		assertTrue("Timer is 740", b.timer==740);
+		assertFalse("Timer is not 150", b.timer==150);
+	}
+	
+	@Test
+	public void testMoveRocks(){
+		
+	}
+	
+	@Test 
+	public void testRemoveRock(){
+		
+	}
+	
+	@Test
+	public void testMoveLeft(){
+		
+	}
+	
+	@Test
+	public void testMoveRight(){
+		
+	}
+
+}
